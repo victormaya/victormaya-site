@@ -17,15 +17,37 @@ export const Content = styled.section`
   font-family: 'Josefin Sans', sans-serif;
   .perfil {
     width: 13rem;
-    border-radius: 50%;
-    overflow: hidden;
     margin-bottom: 1rem;
-    transition: box-shadow 0.3s ease;
+    img {
+      border-radius: 50%;
+      transition: all 0.3s ease;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      background: #fb1;
+      width: 5rem;
+      height: 5rem;
+      border-radius: 50%;
+      opacity: 0;
+      bottom: -0.40rem;
+      left: -0.5rem;
+      z-index: -1;
+      transition: all 0.3s ease;
+    }
   }
 
   .perfil:hover,
   .perfil:focus {
-    box-shadow: 0px 0px 0px 5px #503b08, 0px 0px 0px 10px #fb1;
+    position: relative;
+    img {
+      z-index: 2;
+      border-radius: 5px;
+    }
+    &:after {
+      border-radius: 5px;
+      opacity: 1;
+    }
   }
 
   .textos {
