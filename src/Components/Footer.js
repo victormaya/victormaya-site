@@ -3,7 +3,7 @@ import React from 'react';
 // import { Container } from './styles';
 
 function Footer() {
-  return <div>Footer</div>;
+  return <div>Criado por mim mesmo ;)</div>;
 }
 
 export default Footer;

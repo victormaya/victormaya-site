@@ -76,6 +76,6 @@ export const Container = styled.div`
     color: #ddd;
   }
   &:last-child {
-    margin-bottom: 12rem;
+    margin-bottom: 10rem;
   }
 `;
