@@ -9,12 +9,11 @@ export const Container = styled.div`
 `;
 
 export const Content = styled.section`
-  @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
   padding: 4rem 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Oswald', sans-serif;
   .perfil {
     width: 13rem;
     margin-bottom: 1rem;
@@ -30,7 +29,7 @@ export const Content = styled.section`
       height: 5rem;
       border-radius: 50%;
       opacity: 0;
-      bottom: -0.40rem;
+      bottom: -0.4rem;
       left: -0.5rem;
       z-index: -1;
       transition: all 0.3s ease;
@@ -56,6 +55,27 @@ export const Content = styled.section`
       color: #fd1;
       font-size: 3rem;
       line-height: 2;
+      font-family: 'Passion One', cursive;
+      text-transform: capitalize;
+      background-image: radial-gradient(
+        circle at 50% -3.03%,
+        #ffcf00 0,
+        #ffbc00 12.5%,
+        #ffa800 25%,
+        #ff9214 37.5%,
+        #f37b1f 50%,
+        #e36526 62.5%,
+        #d4522b 75%,
+        #c74130 87.5%,
+        #bb3235 100%
+      );
+
+      background-clip: text;
+      -webkit-background-clip: text; /* Alguns navegadores precisam do prefixo */
+
+      -webkit-text-fill-color: transparent;
+
+      color: black;
     }
     p {
       color: #ddd;
