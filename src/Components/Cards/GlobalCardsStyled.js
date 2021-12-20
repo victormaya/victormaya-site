@@ -11,6 +11,9 @@ export const Container = styled.div`
   width: 80%;
   display: grid;
   grid-template-columns: 1fr 4fr;
+  @media (max-width: 970px) {
+    grid-template-columns: 1fr;
+  }
   align-items: center;
   margin: 1rem auto;
   padding: 2rem;
@@ -22,6 +25,10 @@ export const Container = styled.div`
     position: relative;
     z-index: 1;
     margin-right: 1rem;
+    @media (max-width: 970px) {
+      margin: 0 auto;
+      margin-bottom: 2rem;
+    }
     img {
       background: #ddd;
       border-radius: 50%;
