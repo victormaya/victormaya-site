@@ -6,6 +6,7 @@ function Footer() {
   return (
     <Container>
       <p>Victor Maya - 2021</p>
+      <div className='logo' />
     </Container>
   );
 }

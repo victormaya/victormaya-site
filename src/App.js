@@ -3,7 +3,6 @@ import { Container, ContentLeft, ContentRight } from './styled';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './Components/Header';
 import Footer from './Components/Footer';
-import SobreMim from './Components/SobreMim';
 import Page404 from './Components/Page404';
 import Skills from './Components/Skills';
 import Portifolio from './Components/Portifolio';

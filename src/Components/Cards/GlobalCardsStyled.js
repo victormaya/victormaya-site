@@ -15,7 +15,7 @@ export const Container = styled.div`
   margin: 1rem auto;
   padding: 2rem;
   border-radius: 10px;
-  transition: all 0.2s ease;
+  transition: all 0.5s ease;
   .image {
     width: 6rem;
     border-radius: 50%;

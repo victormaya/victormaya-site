@@ -4,6 +4,7 @@ import GlobalCards from './Cards/GlobalCards';
 import UFMA from '../Assets/UFMA.jpg';
 
 import { Container } from './ContainerPagesStyled';
+import Head from './Head';
 
 function Skills() {
   const [scrollOn, setScrollOn] = React.useState(false);
@@ -11,6 +12,7 @@ function Skills() {
 
   return (
     <Container ref={containerSkills} onScroll={() => setScrollOn(!scrollOn)}>
+      <Head title='Educação' />
       <GlobalCards
         container={containerSkills}
         scrollOn={scrollOn}

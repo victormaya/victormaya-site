@@ -6,6 +6,7 @@ import Stakato from '../Assets/stakato.png';
 import PHOENIX from '../Assets/Phoenix.jpg';
 
 import { Container } from './ContainerPagesStyled';
+import Head from './Head';
 
 function Skills() {
   const [scrollOn, setScrollOn] = React.useState(false);
@@ -13,6 +14,7 @@ function Skills() {
 
   return (
     <Container ref={containerSkills} onScroll={() => setScrollOn(!scrollOn)}>
+      <Head title='Portifólio' />
       <GlobalCards
         container={containerSkills}
         scrollOn={scrollOn}

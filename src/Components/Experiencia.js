@@ -6,6 +6,7 @@ import PHOENIX from '../Assets/Phoenix.jpg';
 import USP from '../Assets/usp.png';
 
 import { Container } from './ContainerPagesStyled';
+import Head from './Head';
 
 function Skills() {
   const [scrollOn, setScrollOn] = React.useState(false);
@@ -13,6 +14,7 @@ function Skills() {
 
   return (
     <Container ref={containerSkills} onScroll={() => setScrollOn(!scrollOn)}>
+      <Head title='Experiência' />
       <GlobalCards
         container={containerSkills}
         scrollOn={scrollOn}

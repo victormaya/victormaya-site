@@ -14,6 +14,7 @@ import adobexd from '../Assets/XD.png';
 import wp from '../Assets/wp.png';
 import git from '../Assets/git.png';
 import { Container } from './ContainerPagesStyled';
+import Head from './Head';
 
 function Skills() {
   const [scrollOn, setScrollOn] = React.useState(false);
@@ -71,6 +72,7 @@ function Skills() {
 
   return (
     <Container ref={containerSkills} onScroll={() => setScrollOn(!scrollOn)}>
+      <Head title='Skills' />
       {skillsList.map((skill) => {
         return (
           <GlobalCards

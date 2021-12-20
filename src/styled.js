@@ -7,10 +7,14 @@ export const Container = styled.div`
   height: calc(100vh - 4rem);
   background: #151515;
   overflow: hidden;
+  @media (max-width: 970px) {
+    grid-template-columns: 1fr;
+    overflow: auto;
+  }
   .animaLeft {
     opacity: 0;
     transform: translateX(-20px);
-    animation: animaLeft 0.3s forwards;
+    animation: animaLeft 0.5s forwards;
   }
   @keyframes animaLeft {
     to {
@@ -26,6 +30,9 @@ export const Container = styled.div`
 
 export const ContentLeft = styled.section`
   padding: 4rem 2rem;
+  @media (max-width: 970px) {
+    padding: 2rem;
+  }
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -95,6 +102,9 @@ export const ContentLeft = styled.section`
 `;
 export const ContentRight = styled.section`
   padding: 4rem 2rem;
+  @media (max-width: 970px) {
+    padding: 2rem;
+  }
   display: flex;
   flex-direction: column;
   align-items: center;

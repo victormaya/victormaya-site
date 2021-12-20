@@ -7,6 +7,7 @@ import linkedin from '../Assets/linkedin.png';
 import github from '../Assets/GitHub.jpg';
 
 import { Container } from './ContainerPagesStyled';
+import Head from './Head';
 
 function Skills() {
   const [scrollOn, setScrollOn] = React.useState(false);
@@ -14,6 +15,7 @@ function Skills() {
 
   return (
     <Container ref={containerSkills} onScroll={() => setScrollOn(!scrollOn)}>
+      <Head title='Contato' />
       <GlobalCards
         container={containerSkills}
         scrollOn={scrollOn}
