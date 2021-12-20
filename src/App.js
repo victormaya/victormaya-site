@@ -20,13 +20,13 @@ const App = () => {
           <img src={perfil} alt='Foto de Perfil' />
         </div>
         <div className='textos animaLeft'>
-          <h1>Oi, sou Victor Maya.</h1>
+          <h1>OI, SOU VICTOR MAYA.</h1>
           <p>
-            Tenho 24 anos, graduado em Ciência e Tecnologia(UFMA) e maranhense.
-            Iniciei meus estudos de Front-End em 2020 durante a pandemia do novo
-            corona vírus e desde então venho me dedicando diariamente aos
-            estudos. Sou apaixonado por UX/UI design e gosto de me manter
-            atualizado sobre novidades de tecnologias em geral.
+            Tenho 24 anos, maranhense, graduado em Ciência e Tecnologia(UFMA),
+            graduando em Engenharia da Computação(UFMA). Sou desenvolvedor
+            front-end com 2 anos de experiência. Trabalho com JavaScript,
+            lidando diariamente com ReactJs e Native. Sou apaixonado por
+            tecnologia, viagens e música. Vivo entre o analógico e o digital.
           </p>
         </div>
       </Content>
@@ -41,9 +41,9 @@ const App = () => {
             <Route path='contato' element={<Contato />} />
             <Route path='*' element={<Page404 />} />
           </Routes>
-          <Footer />
         </BrowserRouter>
       </Content>
+      <Footer />
     </Container>
   );
 };
