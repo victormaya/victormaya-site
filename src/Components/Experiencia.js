@@ -4,6 +4,7 @@ import GlobalCards from './Cards/GlobalCards';
 import UNASUS from '../Assets/unasus.png';
 import PHOENIX from '../Assets/Phoenix.jpg';
 import USP from '../Assets/usp.png';
+import Samba from '../Assets/samba.jpeg';
 
 import { Container } from './ContainerPagesStyled';
 import Head from './Head';
@@ -18,23 +19,30 @@ function Skills() {
       <GlobalCards
         container={containerSkills}
         scrollOn={scrollOn}
-        imagem={UNASUS}
-        titulo='UNA-SUS UFMA'
-        subtitulo='JUNHO - 2020 / DEZEMBRO - 2021'
+        imagem={Samba}
+        titulo='Samba Digital'
+        subtitulo='DEZEMBRO - 2021 / Atual'
+        conteudo={<>Atualmente atuo como front-end pleno na Samba Digital.</>}
+      />
+      <GlobalCards
+        container={containerSkills}
+        scrollOn={scrollOn}
+        imagem={USP}
+        titulo='USPX - USP'
+        subtitulo='JUNHO - 2021 / Atual'
         conteudo={
           <>
-            Como front-end, desenvolvi infográficos interativos em ReactJS para
-            alunos da área da saúde, que podem ser exibidos em qualquer
-            dispositivo, desde smartphones a televisores. <br />
-            Fui um dos responsáveis pela implementação do modelo padrão do
-            infográfico, que otimizou o processo de construção de novos
-            conteúdos. <br />
-            Fui o responsável pela construção da acessibilidade, implementando o
-            modo de alto contraste, a navegação pelo teclado, a mudança de
-            altura de fontes e o leitor de tela
+            Estou realizando a implementação front-end do portal USPX, onde é
+            utilizado Next.js. O site permite a visualização de noticias,
+            cursos, e webinários. Além de ser inteiramente responsivo, o site
+            conta com uma estrutura de acessibilidade, contendo modo de alto
+            contraste, navegação pelo teclado, e mudança de altura de fontes.
+            <br />O site pode ser visualizado em três línguas: português,
+            espanhol e inglês.
           </>
         }
       />
+
       <GlobalCards
         container={containerSkills}
         scrollOn={scrollOn}
@@ -68,18 +76,20 @@ function Skills() {
       <GlobalCards
         container={containerSkills}
         scrollOn={scrollOn}
-        imagem={USP}
-        titulo='USPX - USP'
-        subtitulo='JUNHO - 2021 / Atual'
+        imagem={UNASUS}
+        titulo='UNA-SUS UFMA'
+        subtitulo='JUNHO - 2020 / DEZEMBRO - 2021'
         conteudo={
           <>
-            Estou realizando a implementação front-end do portal USPX, onde é
-            utilizado Next.js. O site permite a visualização de noticias,
-            cursos, e webinários. Além de ser inteiramente responsivo, o site
-            conta com uma estrutura de acessibilidade, contendo modo de alto
-            contraste, navegação pelo teclado, e mudança de altura de fontes.
-            <br />O site pode ser visualizado em três línguas: português,
-            espanhol e inglês.
+            Como front-end, desenvolvi infográficos interativos em ReactJS para
+            alunos da área da saúde, que podem ser exibidos em qualquer
+            dispositivo, desde smartphones a televisores. <br />
+            Fui um dos responsáveis pela implementação do modelo padrão do
+            infográfico, que otimizou o processo de construção de novos
+            conteúdos. <br />
+            Fui o responsável pela construção da acessibilidade, implementando o
+            modo de alto contraste, a navegação pelo teclado, a mudança de
+            altura de fontes e o leitor de tela
           </>
         }
       />
