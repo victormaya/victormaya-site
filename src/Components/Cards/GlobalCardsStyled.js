@@ -55,8 +55,9 @@ export const Container = styled.div`
   }
 
   h2 {
-    font-size: 1.25rem;
+    font-size: 1.375rem;
     font-weight: bold;
+    line-height: 1.1;
     background-image: linear-gradient(
       90deg,
       rgba(187, 50, 53, 1) 0%,

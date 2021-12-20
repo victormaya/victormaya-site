@@ -1,9 +1,13 @@
 import React from 'react';
 
-// import { Container } from './styles';
+import { Container } from './FooterStyled';
 
 function Footer() {
-  return <div>Criado por mim mesmo ;)</div>;
+  return (
+    <Container>
+      <p>Victor Maya - 2021</p>
+    </Container>
+  );
 }
 
 export default Footer;

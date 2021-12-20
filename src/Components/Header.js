@@ -6,10 +6,12 @@ function Header() {
   return (
     <Container>
       <nav>
-        <NavLink to='/' end>Skills</NavLink> |
-        <NavLink to='portifolio'>Portifólio</NavLink> |
+        <NavLink to='/' end>
+          Skills
+        </NavLink>{' '}
+        |<NavLink to='educacao'>Educacão</NavLink> |
         <NavLink to='experiencia'>Experiência</NavLink> |
-        <NavLink to='educacao'>Educacão</NavLink> |
+        <NavLink to='portifolio'>Portifólio</NavLink> |
         <NavLink to='contato'>Contato</NavLink>
       </nav>
     </Container>

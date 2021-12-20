@@ -4,17 +4,33 @@ export const Container = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   width: 100%;
-  height: 100vh;
+  height: calc(100vh - 4rem);
   background: #151515;
   overflow: hidden;
+  .animaLeft {
+    opacity: 0;
+    transform: translateX(-20px);
+    animation: animaLeft 0.3s forwards;
+  }
+  @keyframes animaLeft {
+    to {
+      opacity: 1;
+      transform: initial;
+    }
+  }
+  .visible {
+    opacity: 1;
+    transform: initial;
+  }
 `;
 
-export const Content = styled.section`
+export const ContentLeft = styled.section`
   padding: 4rem 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: 'Oswald', sans-serif;
+  justify-content: center;
+  font-family: Arial, sans-serif;
   .perfil {
     width: 13rem;
     margin-bottom: 1rem;
@@ -76,19 +92,11 @@ export const Content = styled.section`
       font-size: 1.125rem;
     }
   }
-  .animaLeft {
-    opacity: 0;
-    transform: translateX(-20px);
-    animation: animaLeft 0.3s forwards;
-  }
-  @keyframes animaLeft {
-    to {
-      opacity: 1;
-      transform: initial;
-    }
-  }
-  .visible {
-    opacity: 1;
-    transform: initial;
-  }
+`;
+export const ContentRight = styled.section`
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, sans-serif;
 `;

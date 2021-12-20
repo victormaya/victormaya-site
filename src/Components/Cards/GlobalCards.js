@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Container } from './GlobalCardsStyled';
-import useAnimation from '../../Functions/useAnimation';
+import useAnimation from '../../Hooks/useAnimation';
 
 function GlobalCards({
   imagem,

@@ -13,7 +13,7 @@ import figma from '../Assets/figma.png';
 import adobexd from '../Assets/XD.png';
 import wp from '../Assets/wp.png';
 import git from '../Assets/git.png';
-import { Container } from './SkillsStyled';
+import { Container } from './ContainerPagesStyled';
 
 function Skills() {
   const [scrollOn, setScrollOn] = React.useState(false);
@@ -21,7 +21,7 @@ function Skills() {
   const skillsList = [
     {
       imagem: html5Img,
-      titulo: 'Html5',
+      titulo: 'HTML5',
     },
     {
       imagem: css3Img,

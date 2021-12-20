@@ -3,7 +3,7 @@ const useAnimation = (container, card, scrollOn) => {
   React.useEffect(() => {
     if (
       card.current.getBoundingClientRect().top <
-      (window.innerHeight * 2.3) / 4
+      (window.innerHeight * 3) / 4
     ) {
       card.current.classList.add('visible');
     } else {
