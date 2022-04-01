@@ -10,6 +10,8 @@ import Experiencia from './Components/Experiencia';
 import Educacao from './Components/Educacao';
 import Contato from './Components/Contato';
 import perfil from './Assets/perfil.jpeg';
+import MyAge from './Config/MyAge'
+import YearsExperience from './Config/YearsExperience'
 
 const App = () => {
   return (
@@ -22,9 +24,9 @@ const App = () => {
           <div className='textos animaLeft'>
             <h1>OI, SOU VICTOR MAYA.</h1>
             <p>
-              Tenho 24 anos, maranhense, graduado em Ciência e Tecnologia(UFMA),
+              Tenho {MyAge()} anos, maranhense, graduado em Ciência e Tecnologia(UFMA),
               graduando em Engenharia da Computação(UFMA). <br />
-              Sou desenvolvedor front-end com 2 anos de experiência. Trabalho
+              Sou desenvolvedor front-end com {YearsExperience()} anos de experiência. Trabalho
               com JavaScript, lidando diariamente com ReactJs e Native. <br />
               Sou apaixonado por tecnologia, viagens e música. Vivo entre o
               analógico e o digital.
