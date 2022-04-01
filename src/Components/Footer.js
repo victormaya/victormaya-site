@@ -3,9 +3,10 @@ import React from 'react';
 import { Container } from './FooterStyled';
 
 function Footer() {
+  const date = new Date()
   return (
     <Container>
-      <p>Victor Maya - 2021</p>
+      <p>Victor Maya - {date.getFullYear()}</p>
       <div className='logo' />
     </Container>
   );
