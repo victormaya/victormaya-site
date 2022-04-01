@@ -4,12 +4,11 @@ export const Container = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   width: 100%;
-  height: calc(100vh - 4rem);
+  min-height: calc(100vh - 4rem);
   background: #151515;
-  overflow: hidden;
   @media (max-width: 970px) {
-    grid-template-columns: 1fr;
     overflow: auto;
+    grid-template-columns: 1fr;
   }
   .animaLeft {
     opacity: 0;
@@ -38,6 +37,7 @@ export const ContentLeft = styled.section`
   align-items: center;
   justify-content: center;
   font-family: Arial, sans-serif;
+  overflow: auto;
   .perfil {
     width: 13rem;
     margin-bottom: 1rem;
